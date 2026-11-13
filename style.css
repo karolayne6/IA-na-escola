@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #10162f, #343c78);
+    color: white;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icone {
+    font-size: 55px;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 10px;
+}
+
+.cabecalho p {
+    color: #d6ddff;
+    line-height: 1.5;
+}
+
+.cartao {
+    background: white;
+    color: #202945;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px #0004;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.progresso {
+    background: #e5e7eb;
+    height: 9px;
+    border-radius: 10px;
+    margin: 18px 0 25px;
+    overflow: hidden;
+}
+
+#barra {
+    background: #7059d9;
+    width: 0%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+#pergunta {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.opcoes {
+    display: grid;
+    gap: 12px;
+}
+
+.opcao {
+    padding: 15px;
+    border: 2px solid #dce1ed;
+    background: #f7f8fc;
+    color: #202945;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opcao:hover:not(:disabled) {
+    border-color: #7059d9;
+    background: #efedff;
+}
+
+.opcao:disabled {
+    cursor: default;
+    opacity: 1;
+}
+
+.opcao.correta {
+    border-color: #229d63;
+    background: #e6f7ee;
+}
+
+.opcao.incorreta {
+    border-color: #dc5656;
+    background: #fff0f0;
+}
+
+#feedback {
+    margin-top: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.botao-principal,
+.botao-secundario {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao-principal {
+    background: #6550c9;
+    color: white;
+}
+
+.botao-principal:hover {
+    background: #4937a5;
+}
+
+.botao-secundario {
+    background: #e8eaf3;
+    color: #202945;
+}
+
+.sobre {
+    background: #ffffff18;
+    padding: 22px;
+    border-radius: 12px;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.sobre h2 {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #d6ddff;
+    font-size: 13px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .cartao {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .informacoes {
+        font-size: 12px;
+    }
+}
